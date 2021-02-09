@@ -37,7 +37,7 @@ if (q3 === 'yes' || q3 === 'y') {
 }
 
 let q4 = prompt('Did i work at a hospital?');
-q4=q4.toLowerCase()
+q4=q4.toLowerCase();
 if (q4 === 'no' || q4 === 'n') {
   //console.log('wrong answer');
   alert('correct,good job');
@@ -48,7 +48,7 @@ if (q4 === 'no' || q4 === 'n') {
 }
 
 let q5 = prompt('Do i like being an employee?');
-q5=q5.toLowerCase()
+q5=q5.toLowerCase();
 if (q5 === 'no' || q5=== 'n') {
   //console.log('wrong answer');
   alert('correct,this was the last question');
@@ -57,6 +57,57 @@ if (q5 === 'no' || q5=== 'n') {
 } else{
   alert('Next time please answer yes or no');
 }
+
+//q6
+
+let day=prompt('Can you guess the day of the month i was born in');
+for (let i=0;i<=3;i++) {
+  if (day === '27'){ alert('corrects answer');
+    console.log('hala');
+    break;
+  }else if (day <='23' ) {
+    alert('too low');
+    day = prompt('try again');
+  } else if (day >='32') {
+    alert('too high');
+    day = prompt('try again');
+  }else{
+    alert('Close enough');
+    day = prompt('try again');
+  }
+}
+
+//q7
+
+let place=['scotland','india','moroco','north pole','kenya','boston-usa','spain','philippines','japan','russia'];
+
+let answer=prompt('can you guess a country i would like to visit?');
+
+for (let i=0;i<=place.length;i++){
+  if (answer===place[i]){alert('bravo goodjob');
+    break;
+  }
+}
+for (let i=0;i<=5;i++){
+  if (answer!==place[i]){ 
+    answer=prompt('guess again');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 alert('Thank you ' + thename);
