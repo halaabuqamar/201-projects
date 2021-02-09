@@ -4,7 +4,7 @@ let thename =prompt('what is your name?');
 alert('hello ' +thename)
 
 let q1 = prompt('is my name hala?');
-(q1.toLowerCase())
+q1=q1.toLowerCase();
 if (q1 ==='yes' || q1 === 'y') {
       //console.log('that\'s correct'); 
     alert('that\'s correct');
@@ -15,7 +15,7 @@ if (q1 ==='yes' || q1 === 'y') {
 }
 
 let q2 = prompt('Am i from lebanon?');
-(q2.toLowerCase())
+q2=q2.toLowerCase()
 if (q2 === 'no' || q2 === 'n') {
     //console.log('wrong answer');
     alert('correct');
@@ -26,7 +26,7 @@ if (q2 === 'no' || q2 === 'n') {
 }
 
 let q3 = prompt ('im i pharmacist');
-(q3.toLowerCase())
+q3=q3.toLowerCase()
 if (q3 === 'yes' || q3 === 'y') {
     //console.log('that\'s correct')
     alert('that\'s correct');
@@ -37,7 +37,7 @@ if (q3 === 'yes' || q3 === 'y') {
 }
 
 let q4 = prompt('Did i work at a hospital?');
-(q4.toLowerCase())
+q4=q4.toLowerCase()
 if (q4 === 'no' || q4 === 'n') {
     //console.log('wrong answer');
     alert('correct,good job');
@@ -48,7 +48,7 @@ if (q4 === 'no' || q4 === 'n') {
 }
 
 let q5 = prompt('Do i like being an employee?');
-(q5.toLowerCase())
+q5=q5.toLowerCase()
 if (q5 === 'no' || q5=== 'n') {
     //console.log('wrong answer');
     alert('correct,this was the last question');
