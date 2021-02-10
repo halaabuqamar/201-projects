@@ -1,13 +1,13 @@
 'use strict';
-
+let grade=0;
 let thename =prompt('what is your name?');
 alert('hello ' +thename);
 
 let q1 = prompt('is my name hala?');
-q1=q1.toLowerCase();
-if (q1 ==='yes' || q1 === 'y') {
+if (q1.toLowerCase() ==='yes' || q1 === 'y') {
 //console.log('that\'s correct');
   alert('that\'s correct');
+  grade+=1;
 } else if (q1 === 'no' || q1 === 'n') {
   alert('wrong answer');
 } else {
@@ -15,10 +15,10 @@ if (q1 ==='yes' || q1 === 'y') {
 }
 
 let q2 = prompt('Am i from lebanon?');
-q2=q2.toLowerCase();
-if (q2 === 'no' || q2 === 'n') {
+if (q2.toLowerCase() === 'no' || q2 === 'n') {
   //console.log('wrong answer');
   alert('correct');
+  grade+=1;
 } else if (q2 === 'yes' || q2 === 'y') {
   alert('wrong');
 }else{
@@ -26,10 +26,11 @@ if (q2 === 'no' || q2 === 'n') {
 }
 
 let q3 = prompt ('im i pharmacist');
-q3=q3.toLowerCase();
-if (q3 === 'yes' || q3 === 'y') {
+if (q3.toLowerCase() === 'yes' || q3 === 'y') {
   //console.log('that\'s correct')
   alert('that\'s correct');
+  grade+=1;
+  
 } else if (q3 === 'no' || q3 === 'n'){
   alert('wrong answer');
 } else {
@@ -37,10 +38,10 @@ if (q3 === 'yes' || q3 === 'y') {
 }
 
 let q4 = prompt('Did i work at a hospital?');
-q4=q4.toLowerCase();
-if (q4 === 'no' || q4 === 'n') {
+if (q4.toLowerCase() === 'no' || q4 === 'n') {
   //console.log('wrong answer');
   alert('correct,good job');
+  grade+=1;
 } else if (q4 === 'yes' || q4 === 'y') {
   alert('wrong answer :(');
 } else{
@@ -48,10 +49,10 @@ if (q4 === 'no' || q4 === 'n') {
 }
 
 let q5 = prompt('Do i like being an employee?');
-q5=q5.toLowerCase();
-if (q5 === 'no' || q5=== 'n') {
+if (q5.toLowerCase() === 'no' || q5=== 'n') {
   //console.log('wrong answer');
   alert('correct,this was the last question');
+  grade+=1;
 } else if (q5 === 'yes' || q5 === 'y') {
   alert('wrong answer,goodluck next time');
 } else{
@@ -63,6 +64,7 @@ if (q5 === 'no' || q5=== 'n') {
 let day=prompt('Can you guess the day of the month i was born in');
 for (let i=0;i<=3;i++) {
   if (day === '27'){ alert('corrects answer');
+    grade+=1;
     console.log('hala');
     break;
   }else if (day <='23' ) {
@@ -79,37 +81,30 @@ for (let i=0;i<=3;i++) {
 
 //q7
 
-let place=['scotland','india','moroco','north pole','kenya','boston-usa','spain','philippines','japan','russia'];
-
-let answer=prompt('can you guess a country i would like to visit?');
-
-for (let i=0;i<=place.length;i++){
-  if (answer===place[i]){alert('bravo goodjob');
-    break;
+let places=['scotland','india','moroco','north pole','kenya','boston-usa','spain','philippines','japan','russia'];
+let flag=true;
+let answer=prompt('can you guess what country i would like to visit the most?');
+var atmp=5;
+while (flag){
+  for(let j=0;j<places.length;j++){
+    if (atmp===0) {
+      flag=false;
+      break;
+    }
+    if(answer.toLowerCase() === 'scotland'){
+      console.log('answer is'+answer);
+      alert('correct');
+      grade+=1;
+      flag=false;
+      break ;
+    }
+    else{
+      answer =prompt('try again you have '+ atmp+' left');
+      atmp=atmp-1;
+    }
   }
 }
-for (let i=0;i<=5;i++){
-  if (answer!==place[i]){ 
-    answer=prompt('guess again');
-  }
-}
 
+alert(grade+' / 7');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-alert('Thank you ' + thename);
-
-
+alert('thank you '+thename );
