@@ -126,7 +126,7 @@ function ques7(){
         flag=false;
         break;
       }
-      if(answer.toLowerCase() === 'scotland'){
+      if(answer.toLowerCase() === places[j]){
         console.log('answer is'+answer);
         alert('correct');
         grade+=1;
