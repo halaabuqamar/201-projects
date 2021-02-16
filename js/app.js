@@ -119,7 +119,7 @@ function ques7(){
   let places=['scotland','india','moroco','north pole','kenya','boston-usa','spain','philippines','japan','russia'];
   let answer=prompt('can you guess one country from my (would like to visit)list?');
   var atmp=5;
- myloop: while (atmp){
+  myloop: while (atmp){
     atmp=atmp-1;
     for(let j=0;j<places.length;j++){
       if(answer.toLowerCase() === places[j]){
@@ -131,7 +131,11 @@ function ques7(){
     }
     answer =prompt('try again you have '+ atmp+' left');
   }
+  if (atmp===0){
+    alert('correct answer is scotland,india,moroco,north pole,kenya,boston-usa,spain,philippines,japan,russia');
+  }
 }
+
 
 alert(grade+' / 7');
 
