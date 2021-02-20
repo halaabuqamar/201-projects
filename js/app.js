@@ -94,26 +94,32 @@ function ques5(){
 
 
 
+
+
 //q6
 function ques6(){
-  let day=prompt('Can you guess the day of the month i was born in');
+  let day=parseInt(prompt('Can you guess the day of the month i was born in?'));
   for (let i=0;i<=3;i++) {
-    if (day === '27'){ alert('corrects answer');
+    if (day===27){
+      alert('congrates');
       grade+=1;
-      console.log('hala');
       break;
-    }else if (day <='23' ) {
+    }else if (day <=23 ) {
       alert('too low');
-      day = prompt('try again');
-    } else if (day >='32') {
+    } else if (day >=31) {
       alert('too high');
-      day = prompt('try again');
-    }else{
-      alert('Close enough');
-      day = prompt('try again');
     }
+    day = parseInt(prompt('try again'));
   }
+  alert('The correct answer is 27!!');
 }
+
+
+
+
+
+
+
 //q7
 function ques7(){
   let places=['scotland','india','moroco','north pole','kenya','boston-usa','spain','philippines','japan','russia'];
