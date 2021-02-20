@@ -3,15 +3,6 @@ let grade=0;
 let thename =prompt('what is your name?');
 alert('hello ' +thename);
 
-ques1();
-ques2();
-ques3();
-ques4();
-ques5();
-ques6();
-ques7();
-
-
 
 function ques1(){
   let q1 = prompt('is my name hala?');
@@ -25,8 +16,8 @@ function ques1(){
     alert('please answer yes or no');
   }
 
-} 
-
+}
+ques1();
 
 
 function ques2(){
@@ -42,7 +33,7 @@ function ques2(){
   }
 
 }
-
+ques2();
 
 
 function ques3(){
@@ -59,7 +50,7 @@ function ques3(){
   }
 
 }
-
+ques3();
 
 
 function ques4(){
@@ -75,7 +66,7 @@ function ques4(){
   }
 
 }
-
+ques4();
 
 function ques5(){
   let q5 = prompt('Do i like being an employee?');
@@ -90,7 +81,7 @@ function ques5(){
   }
 
 }
-
+ques5();
 
 
 
@@ -113,7 +104,7 @@ function ques6(){
   }
   alert('The correct answer is 27!!');
 }
-
+ques6();
 
 
 
@@ -141,6 +132,7 @@ function ques7(){
     alert('correct answer is scotland,india,moroco,north pole,kenya,boston-usa,spain,philippines,japan,russia');
   }
 }
+ques7();
 
 
 alert(grade+' / 7');
