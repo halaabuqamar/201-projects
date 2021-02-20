@@ -3,16 +3,6 @@ let grade=0;
 let thename =prompt('what is your name?');
 alert('hello ' +thename);
 
-ques1();
-ques2();
-ques3();
-ques4();
-ques5();
-ques6();
-ques7();
-
-
-
 function ques1(){
   let q1 = prompt('is my name hala?');
   if (q1.toLowerCase() ==='yes' || q1.toLocaleLowerCase() === 'y') {
@@ -24,10 +14,8 @@ function ques1(){
   } else {
     alert('please answer yes or no');
   }
-
-} 
-
-
+}
+ques1();
 
 function ques2(){
   let q2 = prompt('Am i from lebanon?');
@@ -42,7 +30,7 @@ function ques2(){
   }
 
 }
-
+ques2();
 
 
 function ques3(){
@@ -60,7 +48,7 @@ function ques3(){
 
 }
 
-
+ques3();
 
 function ques4(){
   let q4 = prompt('Did i work at a hospital?');
@@ -76,7 +64,7 @@ function ques4(){
 
 }
 
-
+ques4();
 function ques5(){
   let q5 = prompt('Do i like being an employee?');
   if (q5.toLowerCase() === 'no' || q5.toLocaleLowerCase()=== 'n') {
@@ -91,7 +79,7 @@ function ques5(){
 
 }
 
-
+ques5();
 
 
 
@@ -114,7 +102,7 @@ function ques6(){
   alert('The correct answer is 27!!');
 }
 
-
+ques6();
 
 
 
@@ -141,7 +129,7 @@ function ques7(){
     alert('correct answer is scotland,india,moroco,north pole,kenya,boston-usa,spain,philippines,japan,russia');
   }
 }
-
+ques7();
 
 alert(grade+' / 7');
 
